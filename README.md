@@ -1,6 +1,6 @@
 # Global Analysis of On-Campus Computer Science & IT Master's Programs
 # Problem statement
-the goal of this project is to gather information of Computer Science and IT masters program from [this website].(https://www.mastersportal.com/)
+the goal of this project is to gather information of Computer Science and IT masters program from [this website.](https://www.mastersportal.com/)
 
 Later we used the scraped data to understand the demographics and correlations using Tableau Dashboard.
 
