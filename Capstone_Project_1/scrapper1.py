@@ -1,7 +1,9 @@
 import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
 import pandas as pd
+import argparse
 import time
+
 
 columns = [
     "Program Name", "University Name", "City", "Country",
@@ -52,8 +54,17 @@ def get_program_details(row):
 
 
 def main():
-    # MOST IMPORTANT LINE → undetected Chrome
-    driver = uc.Chrome(headless=False)
+    # Parse optional ChromeDriver path
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--chromedriver_path", help="Path to ChromeDriver", required=False)
+    args = parser.parse_args()
+
+    # Initialize undetected Chrome
+    if args.chromedriver_path:
+        driver = uc.Chrome(driver_executable_path=args.chromedriver_path, headless=False)
+    else:
+        driver = uc.Chrome(headless=False)
+
 
     program_data = []
 
