@@ -2,7 +2,7 @@
 # Problem statement
 the goal of this project is to gather information of Computer Science and IT masters program from [this website.](https://www.mastersportal.com/)
 
-Later I used the scraped data to understand the demographics and correlations using Tableau Dashboard.
+Later I used the scraped data to explore patterns and insights using an interactive Tableau dashboard.
 
 You can visit the public Dashboard 1 [here:](https://public.tableau.com/app/profile/sheikh.anandee.hasan/viz/GlobalAnalysisofOn-CampusComputerScienceITMastersPrograms/TuitionComparisonDashboard) 
 and Dashboard 2 [here:](https://public.tableau.com/app/profile/sheikh.anandee.hasan/viz/GlobalAnalysisofOn-CampusComputerScienceITMastersPrograms_17642456408750/Dashboard2?publish=yes)
@@ -15,11 +15,18 @@ and Dashboard 2 [here:](https://public.tableau.com/app/profile/sheikh.anandee.ha
 
   ```
 2) Initialize and activate virtual environment
+   For windows:
  ```bash
-  virtualenv --no-site-packages venv
-  source venv/bin/activate
+    python -m venv venv
+   venv\Scripts\activate
+ ```
+For Linux / macOS:
+ ```bash
 
-  ```
+   python3 -m venv venv
+   source venv/bin/activate
+
+ ```
 3) Install dependencies
  ```bash
 
@@ -35,7 +42,6 @@ and Dashboard 2 [here:](https://public.tableau.com/app/profile/sheikh.anandee.ha
 
  ```
  
-
 6) After running, you will get a file named "CS_master_program_details_Top35_Countries.csv" containing all the required details
    Alternatively:
    Check our scraped data here:
