@@ -26,11 +26,10 @@ and Dashboard 2 [here:](https://public.tableau.com/app/profile/sheikh.anandee.ha
     pip install -r requirements.txt
 
 ```
-4) Download the correct version of Chrome WebDriver that matches your browser version:
- https://developer.chrome.com/docs/chromedriver/downloads
+4) Download the correct version of Chrome WebDriver that matches your browser version:https://developer.chrome.com/docs/chromedriver/downloads
 
 5) Run the scrapper
-```bash
+ ```bash
 
     python Capstone_Project_1/scrapper1.py--chromedriver_path
 
