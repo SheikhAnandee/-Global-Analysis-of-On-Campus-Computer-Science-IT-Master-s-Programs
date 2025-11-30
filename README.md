@@ -17,20 +17,27 @@ and Dashboard 2 [here:](https://public.tableau.com/app/profile/sheikh.anandee.ha
 
 3) Initialize and activate virtual environment
    ```bash
-       virtualenv --no-site-packages venv
-       source venv/bin/activate
-   ```
+    virtualenv --no-site-packages venv
+source venv/bin/activate
+
+```
 4) Install dependencies
+   ```bash
+
+    pip install -r requirements.txt
+
+```
+
    ```bash
     pip install -r requirements.txt
    ```
-5) Download Chrome Webdriver from https://developer.chrome.com/docs/chromedriver/downloads
+6) Download Chrome Webdriver from https://developer.chrome.com/docs/chromedriver/downloads
 
-6) Run the scrapper
+7) Run the scrapper
    ```bash
     python Capstone_Project_1/scrapper1.py--chromedriver_path
    ```
-7) After running, you will get a file named "CS_master_program_details_Top35_Countries.csv" containing all the required details
+8) After running, you will get a file named "CS_master_program_details_Top35_Countries.csv" containing all the required details
    Alternatively:
    Check our scraped data here:
    
