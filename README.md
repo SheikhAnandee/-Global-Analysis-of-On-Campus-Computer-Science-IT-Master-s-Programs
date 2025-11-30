@@ -15,10 +15,10 @@ and Dashboard 2 [here:](https://public.tableau.com/app/profile/sheikh.anandee.ha
 
   ```
 2) Initialize and activate virtual environment
-   For windows:
+For Windows:
  ```bash
     python -m venv venv
-   venv\Scripts\activate
+    venv\Scripts\activate
  ```
 For Linux / macOS:
  ```bash
