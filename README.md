@@ -2,7 +2,8 @@
 # Problem statement
 This project automates the collection of Computer Science & IT Master’s program information from 35+ countries using Selenium and Undetected-Chromedriver.
 It gathers key details including program name, university, tuition fee, duration, city, country, average rating, review count, and global ranking percentage. 
-The final output is a clean, analysis-ready dataset sourced from the [MastersPortal](https://www.mastersportal.com/) website.<br/>
+The final output is a clean, analysis-ready dataset sourced from the [MastersPortal](https://www.mastersportal.com/) website. 
+<br/>
 Later I used the scraped data to explore patterns and insights using an interactive Tableau dashboard. <br/>
 1) Tuition Fee Heatmap across countries and rating categories (excluding Singapore)
 2) Bar Chart of Average Tuition Fee by Country
