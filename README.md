@@ -13,8 +13,7 @@ Later I used the scraped data to explore patterns and insights using an interact
 6) Map of European Countries Showing Universities Offering AI, Cybersecurity, and Data Analytics Programs – including number of programs, universities, maximum reviews, average ranking %, and tuition fee
 7) Bar Chart of Number of Top-Ranked Universities in Affordable Countries – showing review count, average rating, and average ranking
 
-You can visit the public Dashboard 1 [here:](https://public.tableau.com/app/profile/sheikh.anandee.hasan/viz/GlobalAnalysisofOn-CampusComputerScienceITMastersPrograms/TuitionComparisonDashboard) <br/>
-and Dashboard 2 [here:](https://public.tableau.com/app/profile/sheikh.anandee.hasan/viz/GlobalAnalysisofOn-CampusComputerScienceITMastersPrograms_17642456408750/Dashboard2?publish=yes) 
+You can visit the public [Dashboard 1](https://public.tableau.com/app/profile/sheikh.anandee.hasan/viz/GlobalAnalysisofOn-CampusComputerScienceITMastersPrograms/TuitionComparisonDashboard) and [Dashboard 2](https://public.tableau.com/app/profile/sheikh.anandee.hasan/viz/GlobalAnalysisofOn-CampusComputerScienceITMastersPrograms_17642456408750/Dashboard2?publish=yes) 
 # Some interesting findings from both dashboards
 1) Universities with Excellent ratings (≥4.5) are slightly cheaper than those with Very Good ratings (≥4).
 2) Most countries fall under the Very Good rating category.
