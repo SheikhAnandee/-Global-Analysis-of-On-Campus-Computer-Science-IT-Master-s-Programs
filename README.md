@@ -7,7 +7,7 @@ The final output is a clean, analysis-ready dataset sourced from the [MastersPor
 Later I used the scraped data to explore patterns and insights using an interactive Tableau dashboard. <br/>
 1) Tuition Fee Heatmap across countries and rating categories (excluding Singapore)
 2) Bar Chart of Average Tuition Fee by Country
-3) Bar Chart of Tuition Fee vs. Rating Category, with bars colored by country
+3) Tuition Fee vs Program Rating (Scatter Plot)
 4) Scatter Plot: Average Monthly Tuition vs. Program Duration (USA Only) – exploring tuition patterns in the USA
 5) List of Top-Ranked Universities Offering Data Science Master’s Programs Worldwide
 6) Map of European Countries Showing Universities Offering AI, Cybersecurity, and Data Analytics Programs – including number of programs, universities, maximum reviews, average ranking %, and tuition fee
@@ -19,8 +19,8 @@ You can visit the public [Dashboard 1](https://public.tableau.com/app/profile/sh
 2) Most countries fall under the Very Good rating category.
 3) Most programs in the USA are 12 months long.
 4) Some 24-month programs are cheaper than certain 8-, 10-, or 12-month programs, which is unusual.
-5) USA has the highest average tuition fee, while Italy has the lowest average tuition fee.
-6) Canada is cheaper compared to some European countries.
+5) USA has the highest average tuition fee, while Italy has the lowest average tuition fee
+6) Programs with similar ratings (≈4.0–4.5) appear across a wide tuition range
 7) Europe offers the best balance of affordability, high-quality education, and strong global rankings.
 8) Program duration varies widely: Europe leans toward 2-year programs, while the USA and UK generally offer 1-year programs.
 9) The UK offers 261 programs in Cybersecurity, AI, and Data Analytics across 108 universities, making it one of the largest contributors in Europe.
