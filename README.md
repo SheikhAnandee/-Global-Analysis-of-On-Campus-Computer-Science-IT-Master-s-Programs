@@ -79,4 +79,4 @@ View the dashboards:
 # Feedback & Contact
 If you have suggestions, questions, or ideas to improve the dataset or dashboard, feel free to reach out. Feedback and discussions are always welcome.
 <br/>
-📧 Email: anandeehasan24@gmail.com
+Email: anandeehasan24@gmail.com
