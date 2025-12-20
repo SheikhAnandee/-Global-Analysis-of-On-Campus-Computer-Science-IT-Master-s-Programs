@@ -70,8 +70,12 @@ For Linux / macOS:
    Alternatively:
    Check our scraped data here: https://github.com/SheikhAnandee/-Global-Analysis-of-On-Campus-Computer-Science-IT-Master-s-Programs/blob/main/Capstone_Project_1/CS_master_program_details_top35_countries.csv
    
-## Analytics   
+# Analytics   
 View the dashboards:
 
 [Dashboard 1](https://public.tableau.com/app/profile/sheikh.anandee.hasan/viz/GlobalAnalysisofOn-CampusComputerScienceITMastersPrograms/TuitionComparisonDashboard)
 [Dashboard 2](https://public.tableau.com/app/profile/sheikh.anandee.hasan/viz/GlobalAnalysisofOn-CampusComputerScienceITMastersPrograms_17642456408750/Dashboard2?publish=yes)
+
+# Feedback & Contact
+If you have suggestions, questions, or ideas to improve the dataset or dashboard, feel free to reach out. Feedback and discussions are always welcome.
+📧 Email: anandeehasan24@gmail.com
