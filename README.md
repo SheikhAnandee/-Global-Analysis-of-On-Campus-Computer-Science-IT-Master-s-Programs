@@ -18,6 +18,7 @@ The scraped dataset is analyzed and visualized using an interactive Tableau dash
 5) List of Top-Ranked Universities Offering Data Science Master’s Programs Worldwide
 6) Map of European Countries Showing Universities Offering AI, Cybersecurity, and Data Analytics Programs – including number of programs, universities, maximum reviews, average ranking %, and tuition fee
 7) Bar Chart of Number of Top-Ranked Universities in Affordable Countries – showing review count, average rating, and average ranking
+8) Dual-Axis Line Chart: Relationship Between Program Ranking, Average Rating, and Review Count
 
 You can visit the public [Dashboard 1](https://public.tableau.com/app/profile/sheikh.anandee.hasan/viz/GlobalAnalysisofOn-CampusComputerScienceITMastersPrograms/TuitionComparisonDashboard) and [Dashboard 2](https://public.tableau.com/app/profile/sheikh.anandee.hasan/viz/GlobalAnalysisofOn-CampusComputerScienceITMastersPrograms_17642456408750/Dashboard2?publish=yes) 
 # Some interesting findings from both dashboards
