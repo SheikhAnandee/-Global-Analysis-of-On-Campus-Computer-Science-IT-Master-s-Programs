@@ -11,6 +11,7 @@ columns = [
     "Ranking_Percentage", "Program Link"
 ]
 
+# helper function to avoid crashes
 def safe_find(row, by, value):
     try:
         return row.find_element(by, value).text.strip()
@@ -41,10 +42,11 @@ def get_program_details(row):
     contents["Average Rating"] = safe_find(row, By.CLASS_NAME, "AverageStarRating")
 
     r = safe_find(row, By.CLASS_NAME, "ReviewQuantity")
+    #Removes parentheses like (123) → 123
     contents["Review Count"] = r.replace("(", "").replace(")", "")
 
     contents["Ranking_Percentage"] = safe_find(row, By.CLASS_NAME, "GlobalPositionPercentageValue")
-
+    #Finds the clickable link for the program
     try:
         contents["Program Link"] = row.find_element(By.TAG_NAME, "a").get_attribute("href")
     except:
