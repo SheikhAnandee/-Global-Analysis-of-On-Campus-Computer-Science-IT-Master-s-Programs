@@ -23,7 +23,7 @@ The scraped dataset is analyzed and visualized using an interactive Tableau dash
 You can visit the public [Dashboard](https://public.tableau.com/views/GlobalAnalysisofOn-CampusComputerScienceITMastersPrograms_17642456408750/Dashboard4?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) 
 # Some interesting findings from both dashboards
 1) Universities with Excellent ratings (≥4.5) are slightly cheaper than those with Very Good ratings (≥4).
-2) Most countries fall under the Very Good rating category.
+2) Program ratings remain consistently strong across all tuition ranges, indicating that higher cost does not necessarily guarantee better quality.
 3) Most programs in the USA are 12 months long.
 4) Some 24-month programs are cheaper than certain 8-, 10-, or 12-month programs, which is unusual.
 5) USA has the highest average tuition fee, while Italy has the lowest average tuition fee
