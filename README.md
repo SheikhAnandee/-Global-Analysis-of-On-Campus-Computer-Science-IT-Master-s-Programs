@@ -30,7 +30,7 @@ You can visit the public [Dashboard](https://public.tableau.com/views/GlobalAnal
 6) Programs with similar ratings (≈4.0–4.5) appear across a wide tuition range
 7) Europe offers the best balance of affordability, high-quality education, and strong global rankings.
 8) Program duration varies widely: Europe leans toward 2-year programs, while the USA and UK generally offer 1-year programs.
-9) The UK offers 261 programs in Cybersecurity, AI, and Data Analytics across 108 universities, making it one of the largest contributors in Europe.
+9) The UK stands out as one of Europe’s largest contributors, offering hundreds of programs in Cybersecurity, AI, and Data Analytics across a wide range of universities.
 10) Average program ratings remain consistently high across rankings, indicating stable quality, while review counts vary significantly, suggesting that higher rankings are more closely linked to quality than to popularity.
     
 # Build from sources and run the selenium scrapper
