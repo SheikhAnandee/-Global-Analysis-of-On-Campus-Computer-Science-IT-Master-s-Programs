@@ -65,7 +65,7 @@ For Linux / macOS:
 5) Run the scrapper
  ```bash
 
-  python Capstone_Project_1/scrapper1.py--chromedriver_path <path_to_chromedriver>
+  python python src/scraper.py--chromedriver_path <path_to_chromedriver>
 
  ```
  
