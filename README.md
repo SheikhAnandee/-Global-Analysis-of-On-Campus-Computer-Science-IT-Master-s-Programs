@@ -71,7 +71,7 @@ For Linux / macOS:
  
 6) After running, you will get a file named "CS_master_program_details_Top35_Countries.csv" containing all the required details
    Alternatively:
-   Check our scraped data here: https://github.com/SheikhAnandee/-Global-Analysis-of-On-Campus-Computer-Science-IT-Master-s-Programs/blob/main/Capstone_Project_1/CS_master_program_details_top35_countries.csv
+   Check our scraped data here: https://github.com/SheikhAnandee/Global-IT-Masters-Program-Analysis/tree/main/data/CS_master_program_details_top35_countries.csv
    
 # Analytics   
 View the dashboards:
