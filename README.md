@@ -37,7 +37,7 @@ The final output is stored as a clean, analysis-ready [CSV file](data/CS_master_
 
 ## Data Analysis & Visualization
 ### Dashboard 1: Tuition Analysis
-<p align="center"> <img src="visualizations/tuition-dashboard-1.png" width="900"> </p>
+<p align="center"> <img src="visualizations/dashboard1.png" width="900"> </p>
 
 ### Visualizations: 
 1. **Scatter Plot: Average Tuition Fee vs. Average Rating**
@@ -53,7 +53,7 @@ The final output is stored as a clean, analysis-ready [CSV file](data/CS_master_
    - Dynamically updates based on the country selected via the bar chart filter — defaults to showing all countries when nothing is selected.
 
 ### Dashboard 2: Ranking & Geographic Distribution
-<p align="center"> <img src="visualizations/ranking-dashboard-2.png" width="900"> </p>
+<p align="center"> <img src="visualizations/dashboard2.png" width="900"> </p>
 
 ### Visualizations: 
 
