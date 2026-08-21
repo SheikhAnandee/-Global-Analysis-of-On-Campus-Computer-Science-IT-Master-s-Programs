@@ -1,7 +1,7 @@
 
 # Global IT Master's Programs
 
-## 🔄 Data Pipeline
+## Data Pipeline
 
 Web Sources
     ↓
