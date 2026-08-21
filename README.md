@@ -259,7 +259,7 @@ You are free to use, modify, and distribute this project with proper attribution
 - **MastersPortal** — Source of program information
 - **Tableau Public** — Interactive data visualization
 - **Selenium & Undetected-Chromedriver Community** — Web automation
-- — **Pandas & NumPy** — Data processing and analysis
+- **Pandas & NumPy** — Data processing and analysis
 - **Open Source Community** — Python libraries and ecosystem
   
 ## Feedback & Contact
