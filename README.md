@@ -1,20 +1,46 @@
 # Global Analysis of IT Master's Programs
+
 ## Quick Links
+
 - **Live Dashboard:** [View on Tableau Public](https://public.tableau.com/views/GlobalITMastersProgramsAnanlysis/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 - **Dataset (CSV):** [View Dataset](data/CS_master_program_details_top35_countries.csv)
 - **Scraper Code:** [View Scraper](src/scraper.py)
 - **Data Source:** [Mastersportal website](https://www.mastersportal.com/)
 - **Full Repository:** [GitHub Repo](https://github.com/SheikhAnandee/Global-IT-Masters-Program-Analysis.git)
 - **Contact:** anandeehasan24@gmail.com
+
 ## Objective
-Build a centralized dataset and interactive dashboard to compare global Computer Science & IT Master’s programs across 35+ countries.
+
+Build a centralized, analysis-ready dataset and interactive Tableau dashboard to compare **Computer Science & IT Master's programs across 35+ countries**.
+
+## Key Questions
+
+This project explores:
+
+- Does higher tuition correspond to better student ratings?
+- Which countries offer more affordable Master's programs?
+- How does program duration affect monthly tuition?
+- Can highly rated but less-reviewed programs be identified as **"Hidden Gems"**?
+- Where are top-ranked CS & IT programs geographically concentrated?
+- Which destinations offer a stronger balance between **cost, rating, duration, and reputation**?
+- 
 ## Project Background
-Comparing Computer Science and IT master’s programs across countries is challenging due to fragmented and inconsistent information spread across multiple university websites. This project addresses that problem by automating the collection of standardized program data from 35+ countries.
-Using Selenium with Undetected-Chromedriver, the project scrapes on-campus CS & IT master’s program information from the [MastersPortal](https://www.mastersportal.com/) website.The resulting dataset is structured, consistent, and ready for analysis, enabling efficient cross-country comparisons of tuition, rankings, duration, and availability.
+
+Comparing Computer Science and IT Master's programs across countries can be challenging because program information is fragmented across different websites and presented in inconsistent formats.
+
+This project addresses that problem by automating the collection of standardized program-level data from [MastersPortal](https://www.mastersportal.com/).
+
+Using **Selenium** and **Undetected-Chromedriver**, the project collects CS & IT Master's program information and transforms it into a structured dataset for cross-country analysis.
+
+The resulting dataset enables comparisons of tuition, ratings, duration, reviews, rankings, and geographic distribution.
+
 ## Data Scraping & Preprocessing
+
 ### Data Collection
-Program data is automatically scraped from paginated search results on [MastersPortal](https://www.mastersportal.com/)  using Selenium and Undetected-Chromedriver to bypass anti-bot protections. 
+Program data is collected from paginated search results on [MastersPortal](https://www.mastersportal.com/) using Selenium and Undetected-Chromedriver.
+
 Key attributes collected include:
+
 - Program Name
 - University
 - City
@@ -27,79 +53,133 @@ Key attributes collected include:
 - Program Links
 
 ### Data Cleaning
-- Parsed location strings into separate city & country
-- Cleaned review counts (removed extra characters)
-- Handled missing values safely
-- Converted tuition fields to numeric format
-- Exported clean, analysis-ready dataset using Pandas
+The collected data is processed using Pandas.
 
-The final output is stored as a clean, analysis-ready [CSV file](data/CS_master_program_details_top35_countries.csv) using Pandas.
+Key preprocessing steps include:
+
+- Parsed location strings into separate city and country fields
+- Cleaned review counts
+- Converted tuition values into numeric format
+- Handled missing values
+- Standardized program information
+- Prepared the final analysis-ready dataset
+
+The final dataset is available here:
+
+[View Dataset](data/CS_master_program_details_top35_countries.csv)
+
 
 ## Data Analysis & Visualization
-### Dashboard 1: Tuition Analysis
-<p align="center"> <img src="visualizations/dashboard1.png" width="900"> </p>
+### Dashboard 1: Tuition & Program Cost Analysis
 
-### Visualizations: 
+<p align="center">
+  <img src="visualizations/dashboard1.png" width="900">
+</p>
+
+### Visualizations
+
 1. **Scatter Plot: Average Tuition Fee vs. Average Rating**
-   - Explores whether higher tuition fees correlate with better program ratings.
-   - Points are color-coded by country and sized by Top-Ranked Count, making it easy to spot which countries offer strong  ratings without the highest price tag.
+   - Examines the relationship between tuition fees and student ratings.
+   - Points are color-coded by country.
+   - Bubble size represents the number of top-ranked programs.
+   - Helps identify countries with highly rated programs without the highest tuition costs.
 
 2. **Bar Chart: Average Tuition Fee by Country**
-   - Highlights countries with the highest and lowest average tuition costs
-   - Clicking a bar filters the other two visualizations by that country.
-   
+   - Compares average tuition fees across countries.
+   - Highlights the highest- and lowest-cost destinations.
+   - Selecting a country filters the other dashboard visualizations.
+
 3. **Scatter Plot: Monthly Average Tuition vs. Program Duration**
-   - Breaks down cost efficiency by program length, with point color showing the average monthly tuition (green = low, red = high).
-   - Dynamically updates based on the country selected via the bar chart filter — defaults to showing all countries when nothing is selected.
+   - Examines cost efficiency across different program lengths.
+   - Shows whether longer programs necessarily have higher monthly tuition.
+   - Dynamically updates based on the selected country.
+   - Monthly tuition is represented through color intensity.
 
-### Dashboard 2: Ranking & Geographic Distribution
-<p align="center"> <img src="visualizations/dashboard2.png" width="900"> </p>
+### Dashboard 2: Rankings & Geographic Distribution
 
-### Visualizations: 
+<p align="center">
+  <img src="visualizations/dashboard2.png" width="900">
+</p>
 
-1. **Scatter Plot: Rating vs. Review Volume ("Hidden Gems" Quadrant Analysis)**
-   - Plots average rating against review count, split into quadrants (Proven Favorites, Popular but Polarizing, Hidden Gems, Watch List) to surface well-rated but under-the-radar programs.
-   - Points are color-coded by country using the dashboard-wide country filter.
+### Visualizations
+
+1. **Scatter Plot: Rating vs. Review Volume — "Hidden Gems" Quadrant Analysis**
+   - Compares average student rating with review volume.
+   - Divides programs into four groups:
+     - **Proven Favorites:** High rating + high review volume
+     - **Popular but Polarizing:** Lower rating + high review volume
+     - **Hidden Gems:** High rating + low review volume
+     - **Watch List:** Lower rating + low review volume
+   - Helps identify highly rated programs that have not yet built a large review base.
 
 2. **Global Map: Geographic Distribution of Top-Ranked Programs**
-    - Choropleth map shading countries by concentration of top-ranked programs.
+   - Shows the geographic concentration of top-ranked CS & IT programs.
+   - Uses country-level shading to highlight major education hubs.
+   - Helps reveal geographic patterns in the distribution of highly ranked programs.
 
 3. **Table: Top Universities for Data Science**
-   - Lists university name, country, and program, with a percentage indicator bar per row.
+   - Displays university name, country, and program.
+   - Includes a percentage indicator for ranking performance.
+   - Provides a focused comparison of Data Science programs within the dataset.
+
+4. **Country Filter**
+   - Allows users to select individual countries or multiple countries.
+   - Filters the relevant dashboard visualizations dynamically.
      
-4. **Country Filter Legend**
-   - Interactive multi-country selector that drives both the scatter plot and the map.
+## Interesting Findings
 
+- **The UK has the highest average tuition fee ($33,377), while Italy has the lowest ($6,255)**, creating a substantial gap in the cost of pursuing a CS & IT Master's program.
 
+- **Programs with similar ratings (≈4.0–4.5) span a wide tuition range**, suggesting that higher tuition does not necessarily guarantee higher student satisfaction.
 
+- **Most programs in the USA have a 12-month duration**, making the one-year Master's format particularly common among US-based programs in the dataset.
 
-You can visit the public [Dashboard](https://public.tableau.com/views/GlobalITMastersProgramsAnanlysis/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) 
+- **Some 24-month programs have lower monthly tuition than certain 10–12 month programs**, showing that longer programs are not necessarily more expensive when cost is normalized by duration.
 
-## Interesting Findings 
+- **The "Hidden Gems" quadrant identifies highly rated programs with relatively low review volume**, highlighting programs that receive strong student feedback but have a smaller review base.
 
-- **The UK has the highest average tuition fee ($33,377), while Italy has the lowest ($6,255)**, creating a substantial gap in the cost of pursuing a CS & IT master's program across countries.
+- **Top-ranked CS & IT programs are geographically concentrated**, with a noticeable cluster across European countries alongside several standout hubs in other regions.
 
-- **Programs with similar ratings (≈4.0–4.5) span a wide tuition range**, indicating that **higher tuition does not necessarily guarantee higher student satisfaction**.
+- **Highly rated programs appear across both lower- and higher-tuition categories**, suggesting that tuition alone is not a reliable indicator of perceived program quality.
 
-- **The USA shows a strong concentration of 12-month master's programs**, suggesting that the **one-year format is particularly common among US-based CS & IT programs** in the dataset.
+- **Several lower-tuition destinations contain highly rated programs**, indicating that students may find strong value-for-money opportunities outside traditionally expensive study destinations.
 
-- **Program duration does not always translate into higher monthly cost**, as some **24-month programs have lower monthly tuition than certain 10–12 month programs**, showing that longer programs can offer better cost efficiency when normalized by duration.
+## Technology Stack
 
-- **The "Hidden Gems" quadrant highlights programs with high ratings but relatively low review volume**, identifying **well-rated programs that may have strong student satisfaction but lower visibility or a smaller review base**.
+| Category | Tools |
+|---|---|
+| Data Collection | Python, Selenium, Undetected-Chromedriver |
+| Data Processing | Pandas, NumPy |
+| Data Visualization | Tableau |
+| Data Storage | CSV |
+| Development | VS Code, Jupyter Notebook |
+| Version Control | Git & GitHub |
 
-- **Top-ranked CS & IT programs are geographically concentrated**, with a noticeable **cluster across European countries on the global map**, alongside a few standout education hubs in other regions.
+## Project Structure
 
-- **Tuition and student ratings show no clear positive relationship**, with **highly rated programs appearing across both lower- and higher-tuition categories**, suggesting that cost alone is not a reliable indicator of perceived program quality.
+```text
+Global-IT-Masters-Program-Analysis/
+│
+├── data/
+│   └── CS_master_program_details_top35_countries.csv
+│
+├── src/
+│   └── scraper.py
+│
+├── visualizations/
+│   ├── dashboard1.png
+│   └── dashboard2.png
+│
+├── README.md
+├── requirements.txt
+└── LICENSE
 
-- **Several lower-tuition destinations still contain highly rated programs**, indicating that students can potentially find **stronger value-for-money options outside traditionally expensive study destinations**.
-
-    
 ## Build from sources and run the selenium scrapper
 1) Clone the repository
  ```bash
 
-   git clone:https://github.com/SheikhAnandee/Global-IT-Masters-Program-Analysis.git
-
+git clone https://github.com/SheikhAnandee/Global-IT-Masters-Program-Analysis.git
+cd Global-IT-Masters-Program-Analysis
   ```
 2) Initialize and activate virtual environment <br/> 
 For Windows:
@@ -129,17 +209,33 @@ For Linux / macOS:
 
  ```
  
-6) After running, you will get a file named "CS_master_program_details_Top35_Countries.csv" containing all the required details
-   Alternatively:
-   Check our scraped data here: https://github.com/SheikhAnandee/Global-IT-Masters-Program-Analysis/tree/main/data/CS_master_program_details_top35_countries.csv
+6) After running the scraper, the collected program information will be exported as a CSV file.
+
+The processed dataset used for the Tableau dashboards is also available here:
+   
+https://github.com/SheikhAnandee/Global-IT-Masters-Program-Analysis/tree/main/data/CS_master_program_details_top35_countries.csv
    
 ##  Analytics & Interactive Dashboard
 
-Explore the full interactive Tableau dashboard to analyze tuition trends, rankings, program distribution, and cross-country comparisons in detail.
+Explore the complete interactive Tableau dashboard to analyze:
+
+- Tuition trends
+- Student ratings
+- Program duration
+- Review volume
+- Rankings
+- Geographic distribution
+- Cross-country comparisons
 
  **Live Dashboard:**  
  [View on Tableau Public](https://public.tableau.com/views/GlobalITMastersProgramsAnanlysis/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+## Limitations
+- The analysis is based on program information available from MastersPortal at the time of data collection.
+- Tuition fees and program details may change over time.
+- Student ratings and review counts depend on the availability and coverage of reviews on the source platform.
+- The dataset represents a comparative snapshot and should not be considered a definitive ranking of all CS & IT Master's programs worldwide.
+- The "Hidden Gems" classification identifies programs with high ratings and relatively low review volume; it does not independently verify academic quality.
 
 ## License
 
@@ -148,12 +244,13 @@ You are free to use, modify, and distribute this project with proper attribution
 
 ## Acknowledgments
 
-- **MastersPortal** – For providing structured access to global master’s program information.
-- **Tableau Public** – For enabling interactive data visualization and dashboard publishing.
-- **Selenium & Undetected-Chromedriver Community** – For automation tools used in large-scale data scraping.
-- **Open Source Community** – For the Python libraries and ecosystem that made this project possible.
-
+- **MastersPortal** — Source of program information
+- **Tableau Public** — Interactive data visualization
+- **Selenium & Undetected-Chromedriver Community** — Web automation
+- — **Pandas & NumPy** — Data processing and analysis
+- **Open Source Community** — Python libraries and ecosystem
+- 
 ## Feedback & Contact
-If you have suggestions, questions, or ideas to improve the dataset or dashboard, feel free to reach out. Feedback and discussions are always welcome.
+Suggestions, questions, and feedback are welcome.
 <br/>
 Email: anandeehasan24@gmail.com
