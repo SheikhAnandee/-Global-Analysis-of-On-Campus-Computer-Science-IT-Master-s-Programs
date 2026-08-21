@@ -1,4 +1,23 @@
-# Global Analysis of IT Master's Programs
+
+# Global IT Master's Programs
+
+## 🔄 Data Pipeline
+
+Web Sources
+    ↓
+Selenium Web Scraping
+    ↓
+Raw Data Collection
+    ↓
+Data Cleaning & Validation
+    ↓
+Feature Engineering
+    ↓
+Processed Dataset
+    ↓
+Tableau Analytics
+    ↓
+Interactive Dashboards & Insights
 
 ## Quick Links
 
