@@ -173,49 +173,60 @@ Global-IT-Masters-Program-Analysis/
 ├── README.md
 ├── requirements.txt
 └── LICENSE
+```
 
-##  Build from Sources and Run the Selenium Scraper
+## Build from Sources and Run the Selenium Scraper
 
-### Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/SheikhAnandee/Global-IT-Masters-Program-Analysis.git
 cd Global-IT-Masters-Program-Analysis
+```
 
-2) Initialize and activate virtual environment <br/> 
+### 2. Initialize and activate virtual environment
+
 For Windows:
- ```bash
-    python -m venv venv
-    venv\Scripts\activate
- ```
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
 For Linux / macOS:
- ```bash
 
-   python3 -m venv venv
-   source venv/bin/activate
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
- ```
-3) Install dependencies
- ```bash
+### 3. Install dependencies
 
-    pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
- ```
-4) Download the correct version of Chrome WebDriver that matches your browser version:https://developer.chrome.com/docs/chromedriver/downloads
+### 4. Download the correct version of Chrome WebDriver
 
-5) Run the scrapper
- ```bash
+Download the Chrome WebDriver version that matches your installed Chrome browser:
 
-  python python src/scraper.py--chromedriver_path <path_to_chromedriver>
+https://developer.chrome.com/docs/chromedriver/downloads
 
- ```
- 
-6) After running the scraper, the collected program information will be exported as a CSV file.
+### 5. Run the scraper
+
+```bash
+python src/scraper.py --chromedriver_path <path_to_chromedriver>
+```
+
+### 6. Output
+
+After running the scraper, the collected program information will be exported as a CSV file.
 
 The processed dataset used for the Tableau dashboards is also available here:
 
 https://github.com/SheikhAnandee/Global-IT-Masters-Program-Analysis/blob/main/data/CS_master_program_details_top35_countries.csv
-   
+
+
 ##  Analytics & Interactive Dashboard
 
 Explore the complete interactive Tableau dashboard to analyze:
