@@ -23,7 +23,7 @@ This project explores:
 - Can highly rated but less-reviewed programs be identified as **"Hidden Gems"**?
 - Where are top-ranked CS & IT programs geographically concentrated?
 - Which destinations offer a stronger balance between **cost, rating, duration, and reputation**?
-- 
+  
 ## Project Background
 
 Comparing Computer Science and IT Master's programs across countries can be challenging because program information is fragmented across different websites and presented in inconsistent formats.
@@ -174,13 +174,14 @@ Global-IT-Masters-Program-Analysis/
 ├── requirements.txt
 └── LICENSE
 
-## Build from sources and run the selenium scrapper
-1) Clone the repository
- ```bash
+##  Build from Sources and Run the Selenium Scraper
 
+### Clone the repository
+
+```bash
 git clone https://github.com/SheikhAnandee/Global-IT-Masters-Program-Analysis.git
 cd Global-IT-Masters-Program-Analysis
-  ```
+
 2) Initialize and activate virtual environment <br/> 
 For Windows:
  ```bash
@@ -212,8 +213,8 @@ For Linux / macOS:
 6) After running the scraper, the collected program information will be exported as a CSV file.
 
 The processed dataset used for the Tableau dashboards is also available here:
-   
-https://github.com/SheikhAnandee/Global-IT-Masters-Program-Analysis/tree/main/data/CS_master_program_details_top35_countries.csv
+
+https://github.com/SheikhAnandee/Global-IT-Masters-Program-Analysis/blob/main/data/CS_master_program_details_top35_countries.csv
    
 ##  Analytics & Interactive Dashboard
 
@@ -249,7 +250,7 @@ You are free to use, modify, and distribute this project with proper attribution
 - **Selenium & Undetected-Chromedriver Community** — Web automation
 - — **Pandas & NumPy** — Data processing and analysis
 - **Open Source Community** — Python libraries and ecosystem
-- 
+  
 ## Feedback & Contact
 Suggestions, questions, and feedback are welcome.
 <br/>
