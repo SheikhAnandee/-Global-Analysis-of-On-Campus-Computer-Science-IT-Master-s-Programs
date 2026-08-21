@@ -40,49 +40,59 @@ The final output is stored as a clean, analysis-ready [CSV file](data/CS_master_
 <p align="center"> <img src="visualizations/tuition-dashboard-1.png" width="900"> </p>
 
 ### Visualizations: 
-1. **Tuition Fee Heatmap**
-   - Compares tuition fees across countries and rating categories (excluding Singapore).
+1. **Scatter Plot: Average Tuition Fee vs. Average Rating**
+   - Explores whether higher tuition fees correlate with better program ratings.
+   - Points are color-coded by country and sized by Top-Ranked Count, making it easy to spot which countries offer strong  ratings without the highest price tag.
 
 2. **Bar Chart: Average Tuition Fee by Country**
-   - Highlights countries with the highest and lowest average tuition costs.
-
-3. **Scatter Plot: Average Tuition Fee vs. Average Rating**
-   - Analyzes whether higher tuition fees are associated with better program ratings worldwide.
+   - Highlights countries with the highest and lowest average tuition costs
+   - Clicking a bar filters the other two visualizations by that country.
    
-4. **Scatter Plot: Average Monthly Tuition vs. Program Duration**
-   - Examines cost efficiency patterns across different program lengths.
-   - The country can be dynamically selected using the dashboard filter.
+3. **Scatter Plot: Monthly Average Tuition vs. Program Duration**
+   - Breaks down cost efficiency by program length, with point color showing the average monthly tuition (green = low, red = high).
+   - Dynamically updates based on the country selected via the bar chart filter — defaults to showing all countries when nothing is selected.
 
 ### Dashboard 2: Ranking & Geographic Distribution
 <p align="center"> <img src="visualizations/ranking-dashboard-2.png" width="900"> </p>
 
 ### Visualizations: 
 
-1. **List of Top-Ranked Universities Offering Data Science Master’s Programs Worldwide**
+1. **Scatter Plot: Rating vs. Review Volume ("Hidden Gems" Quadrant Analysis)**
+   - Plots average rating against review count, split into quadrants (Proven Favorites, Popular but Polarizing, Hidden Gems, Watch List) to surface well-rated but under-the-radar programs.
+   - Points are color-coded by country using the dashboard-wide country filter.
 
-2. **Map of European Countries Showing Universities Offering AI, Cybersecurity, and Data Analytics Programs**
+2. **Global Map: Geographic Distribution of Top-Ranked Programs**
+    - Choropleth map shading countries by concentration of top-ranked programs.
 
-3. **Bar Chart: Number of Top-Ranked Universities in Affordable Countries**
+3. **Table: Top Universities for Data Science**
+   - Lists university name, country, and program, with a percentage indicator bar per row.
+     
+4. **Country Filter Legend**
+   - Interactive multi-country selector that drives both the scatter plot and the map.
 
-4. **Bubble Chart: Average Tuition vs Rating Comparison**
-   - Bubble size reflects number of top-ranked universities and review volume
 
-5. **Dual-Axis Line Chart: Relationship Between Program Ranking, Average Rating, and Review Count**
+
 
 You can visit the public [Dashboard](https://public.tableau.com/views/GlobalITMastersProgramsAnanlysis/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) 
 
-## Interesting Findings from Both Dashboards
+## Interesting Findings 
 
-- **Excellent-rated programs (≥4.5)** are slightly cheaper than those with “Very Good” ratings (≥4.0).  
-- **Program ratings** remain consistently strong across all tuition ranges, showing that higher cost does not guarantee better quality.  
-- Most programs in the **USA** have a **12-month duration**.  
-- Some **24-month programs** are cheaper than certain 8–12 month programs, which is unusual.  
-- The **USA** has the highest average tuition fee, while **Italy** has the lowest.  
-- Programs with similar ratings (≈4.0–4.5) span a **wide tuition range**.  
-- **Europe** offers the best balance of **affordability, quality, and global rankings**.  
-- Program duration varies widely: Europe favors **2-year programs**, while the USA and UK mostly offer **1-year programs**.  
-- The **UK** is one of Europe’s largest contributors, offering hundreds of programs in **Cybersecurity, AI, and Data Analytics**.  
-- **Average program ratings** are consistently high across rankings, while **review counts** vary, indicating that **ranking correlates more with quality than popularity**.
+- **The UK has the highest average tuition fee ($33,377), while Italy has the lowest ($6,255)**, creating a substantial gap in the cost of pursuing a CS & IT master's program across countries.
+
+- **Programs with similar ratings (≈4.0–4.5) span a wide tuition range**, indicating that **higher tuition does not necessarily guarantee higher student satisfaction**.
+
+- **The USA shows a strong concentration of 12-month master's programs**, suggesting that the **one-year format is particularly common among US-based CS & IT programs** in the dataset.
+
+- **Program duration does not always translate into higher monthly cost**, as some **24-month programs have lower monthly tuition than certain 10–12 month programs**, showing that longer programs can offer better cost efficiency when normalized by duration.
+
+- **The "Hidden Gems" quadrant highlights programs with high ratings but relatively low review volume**, identifying **well-rated programs that may have strong student satisfaction but lower visibility or a smaller review base**.
+
+- **Top-ranked CS & IT programs are geographically concentrated**, with a noticeable **cluster across European countries on the global map**, alongside a few standout education hubs in other regions.
+
+- **Tuition and student ratings show no clear positive relationship**, with **highly rated programs appearing across both lower- and higher-tuition categories**, suggesting that cost alone is not a reliable indicator of perceived program quality.
+
+- **Several lower-tuition destinations still contain highly rated programs**, indicating that students can potentially find **stronger value-for-money options outside traditionally expensive study destinations**.
+
     
 ## Build from sources and run the selenium scrapper
 1) Clone the repository
