@@ -3,17 +3,23 @@
 
 ## Data Pipeline
 
-```mermaid
-flowchart TD
-    A[Web Sources] --> B[Selenium Web Scraping]
-    B --> C[Raw Data Collection]
-    C --> D[Data Cleaning & Validation]
-    D --> E[Feature Engineering]
-    E --> F[Processed Dataset]
-    F --> G[Tableau Analytics]
-    G --> H[Interactive Dashboards & Insights]
 ```
-
+Web Sources
+     ↓
+Selenium Web Scraping
+     ↓
+Raw Data Collection
+     ↓
+Data Cleaning & Validation
+     ↓
+Feature Engineering
+     ↓
+Processed Dataset
+     ↓
+Tableau Analytics
+     ↓
+Interactive Dashboards & Insights
+```
 ## Quick Links
 
 - **Live Dashboard:** [View on Tableau Public](https://public.tableau.com/views/GlobalITMastersProgramsAnanlysis/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
