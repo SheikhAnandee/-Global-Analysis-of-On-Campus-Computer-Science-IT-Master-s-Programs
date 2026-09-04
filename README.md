@@ -3,21 +3,16 @@
 
 ## Data Pipeline
 
-Web Sources
-    ↓
-Selenium Web Scraping
-    ↓
-Raw Data Collection
-    ↓
-Data Cleaning & Validation
-    ↓
-Feature Engineering
-    ↓
-Processed Dataset
-    ↓
-Tableau Analytics
-    ↓
-Interactive Dashboards & Insights
+```mermaid
+flowchart TD
+    A[Web Sources] --> B[Selenium Web Scraping]
+    B --> C[Raw Data Collection]
+    C --> D[Data Cleaning & Validation]
+    D --> E[Feature Engineering]
+    E --> F[Processed Dataset]
+    F --> G[Tableau Analytics]
+    G --> H[Interactive Dashboards & Insights]
+```
 
 ## Quick Links
 
